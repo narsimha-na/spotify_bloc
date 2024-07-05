@@ -1,0 +1,39 @@
+name: spotify_bloc
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.4.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_svg:
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/fonts/
+    - assets/images/
+    - assets/vectors/
+  fonts:
+    - family: jost
+      fonts:
+        - asset: assets/fonts/Jost400.ttf
+          weight: 400
+        - asset: assets/fonts/Jost500.ttf
+          weight: 500
+        - asset: assets/fonts/Jost600.ttf
+          weight: 600
+        - asset: assets/fonts/Jost700.ttf
+          weight: 700
+        - asset: assets/fonts/Jost800.ttf
+          weight: 800
+        - asset: assets/fonts/Jost900.ttf
+          weight: 900
