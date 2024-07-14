@@ -18,8 +18,22 @@ class PrimaryButton extends StatelessWidget {
       ),
       child: Text(
         title,
-        style: TextStyle(color: AppColors.white),
+        style: const TextStyle(color: AppColors.white),
       ),
     );
+  }
+}
+
+class CustomTextButton extends StatelessWidget {
+  final VoidCallback onPressed;
+  final String title;
+  final double? height;
+
+  const CustomTextButton(
+      {required this.onPressed, required this.title, this.height, super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container();
   }
 }

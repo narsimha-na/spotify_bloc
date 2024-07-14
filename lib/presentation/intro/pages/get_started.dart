@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:spotify_bloc/common/widgets/buttons.dart';
@@ -56,24 +58,25 @@ class GetStartedPage extends StatelessWidget {
                     fontSize: 14,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 PrimaryButton(
                   onPressed: () {
+                    log("button cliked");
                     Navigator.push(
                         context,
                         MaterialPageRoute(
                             builder: (context) => const ChooseMode()));
                   },
-                  title: 'Get Started',
+                  title: 'Getd Started',
                 ),
               ],
             ),
           ),
-          Container(
-            color: Colors.black.withOpacity(0.15),
-          ),
+          // Container(
+          //           color: Colors.black.withOpacity(0.15),
+          //         ),
         ],
       ),
     );

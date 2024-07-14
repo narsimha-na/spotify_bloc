@@ -7,9 +7,33 @@ class AppTheme {
     scaffoldBackgroundColor: const Color.fromRGBO(242, 242, 242, 1),
     brightness: Brightness.light,
     fontFamily: 'jost',
+    inputDecorationTheme: InputDecorationTheme(
+      filled: true,
+      fillColor: Colors.transparent,
+      contentPadding: const EdgeInsets.all(20),
+      border: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(30),
+        borderSide: const BorderSide(
+          color: Colors.black,
+          width: 0.4,
+        ),
+      ),
+      hintStyle: const TextStyle(
+        color: AppColors.hintTextLight,
+        fontWeight: FontWeight.w500,
+      ),
+      enabledBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(30),
+        borderSide: const BorderSide(
+          color: Colors.black,
+          width: 0.4,
+        ),
+      ),
+    ),
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
           backgroundColor: AppColors.primary,
+          elevation: 0,
           textStyle: const TextStyle(
               fontSize: 20,
               fontWeight: FontWeight.bold,
@@ -24,9 +48,33 @@ class AppTheme {
     scaffoldBackgroundColor: AppColors.darkBackgorund,
     brightness: Brightness.dark,
     fontFamily: 'jost',
+    inputDecorationTheme: InputDecorationTheme(
+      filled: true,
+      fillColor: Colors.transparent,
+      hintStyle: const TextStyle(
+        color: AppColors.hintTextDark,
+        fontWeight: FontWeight.w500,
+      ),
+      contentPadding: const EdgeInsets.all(20),
+      border: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(30),
+        borderSide: const BorderSide(
+          color: Colors.white,
+          width: 0.4,
+        ),
+      ),
+      enabledBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(30),
+        borderSide: const BorderSide(
+          color: Colors.white,
+          width: 0.4,
+        ),
+      ),
+    ),
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
           backgroundColor: AppColors.primary,
+          elevation: 0,
           textStyle: const TextStyle(
               fontSize: 20,
               fontWeight: FontWeight.bold,
