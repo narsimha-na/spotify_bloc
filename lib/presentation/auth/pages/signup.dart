@@ -6,7 +6,7 @@ import 'package:spotify_bloc/core/configs/assets/app_vectors.dart';
 import 'package:spotify_bloc/data/models/auth/create_user_req.dart';
 import 'package:spotify_bloc/domain/usecases/auth/singup.dart';
 import 'package:spotify_bloc/presentation/auth/pages/signin.dart';
-import 'package:spotify_bloc/presentation/root/pages/root.dart';
+import 'package:spotify_bloc/presentation/home/pages/home.dart';
 import 'package:spotify_bloc/service_locator.dart';
 
 class SingUpPage extends StatelessWidget {
@@ -51,14 +51,14 @@ class SingUpPage extends StatelessWidget {
                       ScaffoldMessenger.of(context).showSnackBar(SnackBar(
                           content: Text(
                         l,
-                        style: TextStyle(color: Colors.white),
+                        style: const TextStyle(color: Colors.white),
                       )));
                     }, (r) {
                       Navigator.pushAndRemoveUntil(
                           context,
                           MaterialPageRoute(
                               builder: (BuildContext context) =>
-                                  const RootPage()),
+                                  const HomePage()),
                           (route) => false);
                     });
                   },
@@ -121,7 +121,7 @@ class SingUpPage extends StatelessWidget {
             onPressed: () {
               Navigator.pushReplacement(
                 context,
-                MaterialPageRoute(builder: (context) => const SignInPage()),
+                MaterialPageRoute(builder: (context) => SignInPage()),
               );
             },
             child: const Text(
