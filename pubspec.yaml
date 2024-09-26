@@ -15,9 +15,11 @@ dependencies:
   path_provider:
   firebase_core:
   firebase_auth:
+  go_router: ^5.2.0
   get_it:
   dartz:
   cloud_firestore:
+  equatable: ^2.0.5
 
 dev_dependencies:
   flutter_test:
@@ -31,7 +33,7 @@ flutter:
     - assets/images/
     - assets/vectors/
   fonts:
-    - family: jost
+    - family: Jost
       fonts:
         - asset: assets/fonts/Jost400.ttf
           weight: 400
